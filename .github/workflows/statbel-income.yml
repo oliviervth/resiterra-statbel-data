@@ -18,3 +18,10 @@ jobs:
 
       - name: Run downloader
         run: python scripts/download_statbel_income.py
+      - name: Commit JSON
+        run: |
+          git config --global user.name "github-actions"background:
+          git config --global user.email "github-actions@github.com"
+          git add data/income.json
+          git commit -m "Update income data" || echo "No changes"
+          git push
