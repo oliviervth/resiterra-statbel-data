@@ -17,4 +17,4 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run downloader
-        run: python scripts/dowload_statbel_income.py
+        run: python scripts/download_statbel_income.py
