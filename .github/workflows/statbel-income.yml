@@ -1,4 +1,4 @@
-name: "Update Statbel Income Data"
+name: Update Statbel Income Data
 
 on:
   workflow_dispatch:
@@ -6,14 +6,15 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-    
-  steps:
-    - uses: actions/checkout@v4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install packages
+        run: pip install -r requirements.txt
 
-    - uses: actions/setup-python@v5
-      with:
-        python-version: "3.11"
-        
-    - run: pip install -r requirements.txt
-
-    - run: python scripts/download_statbel_income.py
+      - name: Run downloader
+        run: python scripts/dowload_statbel_income.py
