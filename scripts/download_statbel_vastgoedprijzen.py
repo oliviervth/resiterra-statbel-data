@@ -2,7 +2,7 @@ import json
 import requests
 from pathlib import Path
 
-EXPORT_URL = "https://bestat.statbel.fgov.be/bestat/api/views/ddef4721-523c-4ac2-a595-315d7bd0496a/result/JSON "
+EXPORT_URL = "https://bestat.statbel.fgov.be/bestat/api/views/ddef4721-523c-4ac2-a595-315d7bd0496a/result/JSON"
 
 OUTPUT_DIR = Path("data")
 OUTPUT_DIR.mkdir(exist_ok=True)
