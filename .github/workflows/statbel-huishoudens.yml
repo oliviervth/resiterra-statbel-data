@@ -22,6 +22,6 @@ jobs:
         run: |
           git config --global user.name "github-actions"background:
           git config --global user.email "github-actions@github.com"
-          git add data/income.json
+          git add data/huishoudens.json
           git commit -m "Update huishoudens data" || echo "No changes"
           git push
