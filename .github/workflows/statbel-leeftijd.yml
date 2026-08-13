@@ -1,0 +1,27 @@
+name: Update Statbel Leeftijd Data
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install packages
+        run: pip install -r requirements.txt
+
+      - name: Run downloader
+        run: python scripts/download_statbel_leeftijd.py
+      - name: Commit JSON
+        run: |
+          git config --global user.name "github-actions"background:
+          git config --global user.email "github-actions@github.com"
+          git add data/income.json
+          git commit -m "Update leeftijd data" || echo "No changes"
+          git push
