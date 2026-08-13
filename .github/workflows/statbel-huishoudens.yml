@@ -23,5 +23,5 @@ jobs:
           git config --global user.name "github-actions"background:
           git config --global user.email "github-actions@github.com"
           git add data/income.json
-          git commit -m "Update income data" || echo "No changes"
+          git commit -m "Update huishoudens data" || echo "No changes"
           git push
