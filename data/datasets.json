@@ -1,0 +1,68 @@
+{
+  "datasets": [
+    {
+      "id": "income",
+      "name": "Fiscale inkomens",
+      "file": "income.json",
+      "type": "json",
+      "source": "Statbel be.STAT",
+      "purpose": "Koopkracht, gemiddeld inkomen, mediaan inkomen en fiscale draagkracht per gemeente."
+    },
+    {
+      "id": "vastgoedprijzen",
+      "name": "Vastgoedprijzen",
+      "file": "vastgoedprijzen.json",
+      "type": "json",
+      "source": "Statbel be.STAT",
+      "purpose": "Mediaanprijzen, kwartielen en aantal verkopen per gemeente en vastgoedtype."
+    },
+    {
+      "id": "huishoudens",
+      "name": "Huishoudens",
+      "file": "huishoudens.json",
+      "type": "json",
+      "source": "Statbel be.STAT",
+      "purpose": "Aantal huishoudens, type huishoudens en huishoudgrootte per gemeente."
+    },
+    {
+      "id": "leeftijd",
+      "name": "Leeftijdsstructuur",
+      "file": "leeftijd.json",
+      "type": "json",
+      "source": "Statbel be.STAT",
+      "purpose": "Leeftijdsopbouw per gemeente voor doelgroepanalyse zoals starters, gezinnen en senioren."
+    },
+    {
+      "id": "kadaster_bodembezetting",
+      "name": "Bodembezetting kadaster",
+      "file": "kadaster_bodembezetting.json",
+      "type": "json",
+      "source": "Statbel be.STAT",
+      "purpose": "Percelen, oppervlakte, belastbare oppervlakte en kadastraal inkomen per gemeente."
+    },
+    {
+      "id": "vestigingseenheden",
+      "name": "Vestigingseenheden",
+      "file": "vestigingseenheden.json",
+      "type": "json",
+      "source": "Statbel be.STAT",
+      "purpose": "Lokale economische activiteit per gemeente, kwartaal en economische activiteit."
+    },
+    {
+      "id": "bouwvergunningen",
+      "name": "Bouwvergunningen",
+      "file": "bouwvergunningen.xlsx",
+      "type": "xlsx",
+      "source": "Statbel Open Data",
+      "purpose": "Nieuwe vergunde woningen, appartementen en eengezinswoningen per gemeente."
+    },
+    {
+      "id": "gebouwenpark",
+      "name": "Gebouwenpark",
+      "file": "gebouwenpark.xlsx",
+      "type": "xlsx",
+      "source": "Statbel Open Data",
+      "purpose": "Bestaand gebouwenbestand, woningtypes en gebouwcategorieën per gemeente."
+    }
+  ]
+}
