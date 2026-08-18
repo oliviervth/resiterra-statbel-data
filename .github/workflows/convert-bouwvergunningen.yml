@@ -1,4 +1,4 @@
-name: Convert Bouwvergunningen per gemeente
+name: Convert Bouwvergunningen Excel to JSON per gemeente
 
 on:
   workflow_dispatch:
@@ -19,13 +19,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Convert bouwvergunningen
+      - name: Convert bouwvergunningen per gemeente
         run: python scripts/convert_bouwvergunningen_per_gemeente.py
 
-      - name: Commit JSON
+      - name: Commit JSON files
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add data/bouwvergunningen.json
+          git add data/bouwvergunningen/
           git commit -m "Update bouwvergunningen per gemeente JSON" || echo "No changes"
           git push
